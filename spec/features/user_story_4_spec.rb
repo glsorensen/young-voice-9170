@@ -18,19 +18,19 @@ RSpec.describe 'User Story 4' do
       ProfessorStudent.create(student_id: malfoy.id, professor_id: lupin.id)
       ProfessorStudent.create(student_id: longbottom.id, professor_id: snape.id)
 
-      isit "professor/#{snape.id}"
+      visit "/professor/#{snape.id}"
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(longbottom.name)
       expect(page).to have_content(@students.average_age)
 
-      visit "professor/#{hagarid.id}"
+      visit "/professor/#{hagarid.id}"
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(malfoy.name)
       expect(page).to have_content(@students.average_age)
 
-      visit "professor/#{lupin.id}"
+      visit "/professor/#{lupin.id}"
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(malfoy.name)
