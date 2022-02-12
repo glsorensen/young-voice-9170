@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "User Story 2" do
-  describe 'as avisitor' do
+  describe 'as a visitor' do
     describe 'when I visit /professors/:id' do
       it 'shows a list of students for that professor' do
         snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
