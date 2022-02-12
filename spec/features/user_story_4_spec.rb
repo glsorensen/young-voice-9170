@@ -1,4 +1,4 @@
-require 'rails-helper'
+require 'rails_helper'
 
 RSpec.describe 'User Story 4' do
   describe 'as a visitor to /professors/:id' do
