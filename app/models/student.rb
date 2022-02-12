@@ -7,4 +7,8 @@ class Student <ApplicationRecord
   def total_professors
     professors.count
   end
+
+  def self.average_age
+    sum(:age)/count(:age)
+  end
 end

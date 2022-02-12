@@ -22,19 +22,19 @@ RSpec.describe 'User Story 4' do
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(longbottom.name)
-      expect(page).to have_content(students.average_age)
+      expect(page).to have_content(Student.average_age)
 
       visit "/professors/#{hagarid.id}"
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(malfoy.name)
-      expect(page).to have_content(students.average_age)
+      expect(page).to have_content(Student.average_age)
 
       visit "/professors/#{lupin.id}"
 
       expect(page).to have_content(harry.name)
       expect(page).to have_content(malfoy.name)
-      expect(page).to have_content(students.average_age)
+      expect(page).to have_content(Student.average_age)
     end
   end
 end
