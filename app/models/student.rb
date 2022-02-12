@@ -4,4 +4,7 @@ class Student <ApplicationRecord
 
   validates_presence_of :name, :age, :house
 
+  def total_professors
+    professors.count
+  end
 end
