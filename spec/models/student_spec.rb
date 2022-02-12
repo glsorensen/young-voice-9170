@@ -45,4 +45,14 @@ RSpec.describe Student, type: :model do
       expect(longbottom.total_professors).to eq(1)
     end
   end
+
+  describe "average_age method" do
+    it ' finds the average age of the students' do
+      harry = Student.create(name: "Harry Potter" , age: 10 , house: "Gryffindor" )
+      malfoy = Student.create(name: "Draco Malfoy" , age: 12 , house: "Slytherin" )
+      longbottom = Student.create(name: "Neville Longbottom" , age: 11 , house: "Gryffindor" )
+
+      expect(Student.average_age).to eq(11)
+    end
+  end
 end
