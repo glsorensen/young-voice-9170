@@ -1,59 +1,7 @@
-# Hogwarts Again
+Overall I am happy with how this IC went. I would like to get a little faster so that I can complete all the user stories but I was just a couple of minutes from finishing 4.
 
-## Setup instructions:
-  - Fork this repo
-  - `git clone <repo>`
-  - `cd <repo_name>`
-  - `bundle install`
-  - `rails db:{create,migrate,seed}`
+I like how I set up the project. I wrote out all the tests first and then went through each user story 1 by 1 to get the tests to pass. I also really worked on my commits making sure I commited after each little part was built. This probably slowed me down a little bit as i had over 30 commits, but I believe it is a good habit to get into. God knows I already have enough commitment issues in my life. ;-)
 
-When you run rspec, you should have 12 failing tests to start.  
+I need to get quiker at the views and iterating through the objects and it took me a little tim to differentiate between the instance and class methods, but i eventually got it and it is making more and more sense.
 
-###  Overview
-
-We will be creating an application to track Professors and Students at the Hogwarts School of Witchcraft and Wizardry from the Harry Potter book series (you do not need any knowledge of Harry Potter to complete this challenge). 
-
- 
-### User Stories
- 
-```
-User Story 1 of 4
-As a visitor,
-When I visit '/professors',
-I see a list of professors with the following information:
--Name
--Age
--Specialty
-(e.g. "Name: Minerva McGonagall, Age: 204, Specialty: Transfiguration")
-```
-```
-User Story 2 of 4
-As a visitor,
-When I visit '/professors/:id'
-I see a list of the names of the students the professors have.
-(e.g. "Neville Longbottom"
-     "Hermione Granger"
-     "Luna Lovegood")
-```
-```
-User Story 3 of 4
-As a visitor,
-When I visit '/students'
-I see a list of students and the number of professors each student has.
-(e.g. "Draco Malfoy: 5"
-     "Nymphadora Tonks: 10")
-```
-```
-User Story 4 of 4
-As a visitor,
-When I visit '/professors/:id'
-I see the average age of all students for that professor.
-(e.g. "Average Age: 14.5")
-```
----
-### Extension
-```
-User Story Extension
-On all index pages, all information is listed alphabetically.
-	
-
+I will say having the practice IC made this one much easier and I appreciate the reps that it is giving me!
