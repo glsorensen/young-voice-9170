@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe 'User Story 1' do
+RSpec.describe 'User Story 1' do
   describe 'as a visitor' do
     describe 'when I visit /professors' do
       it 'shows a list of professors with their attributes name, age, specialty' do
